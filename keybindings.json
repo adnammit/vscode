@@ -1,0 +1,37 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+h",
+        "command": "editor.action.selectAll",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+g",
+        "command": "workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+up",
+        "when": "editorTextFocus",
+        "command": "block-travel.jumpUp",
+    },
+    {
+        "key": "ctrl+shift+up",
+        "when": "editorTextFocus",
+        "command": "block-travel.selectUp",
+    },
+    {
+        "key": "ctrl+down",
+        "when": "editorTextFocus",
+        "command": "block-travel.jumpDown",
+    },
+    {
+        "key": "ctrl+shift+down",
+        "when": "editorTextFocus",
+        "command": "block-travel.selectDown",
+    },
+]
