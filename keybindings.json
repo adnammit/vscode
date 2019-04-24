@@ -1,14 +1,69 @@
 // Place your key bindings in this file to override the defaults
 [
+    // === windows and views
+    // -- split and navigate panes
     {
-        "key": "ctrl+h",
-        "command": "editor.action.selectAll",
-        "when": "textInputFocus"
+        "key": "ctrl+shift+\\",
+        "command": "workbench.action.splitEditorOrthogonal"
     },
     {
-        "key": "ctrl+shift+d",
-        "command": "editor.action.copyLinesDownAction",
+        "key": "alt+left",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "alt+right",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "editor.action.startFindReplaceAction"
+    },
+    {
+        "key": "ctrl+f5",
+        "command": "workbench.action.reloadWindow",
         "when": "editorTextFocus"
+    }
+    // -- change language
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.editor.changeLanguageMode"
+    },
+    // --- extensions
+    {
+        "key": "alt+x",
+        "command": "workbench.view.extensions"
+    },
+    // --- keybindings
+    {
+        "key": "ctrl+.",
+        "command": "workbench.action.openGlobalKeybindings"
+    },
+    // --- md preview
+    {
+        "key": "ctrl+shift+m",
+        "command": "markdown.showPreview",
+        "when": "editorLangId == 'markdown'"
+    },
+    // -- explorer
+    {
+        "key": "alt+t",
+        "command": "workbench.view.explorer"
+    },
+    // --- terminal
+    {
+        "key": "alt+shift+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    // === movement && selection
+    {
+        "key": "alt+shift+,",
+        "command": "cursorTop",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+shift+.",
+        "command": "cursorBottom",
+        "when": "textInputFocus && !editorReadonly"
     },
     {
         "key": "alt+g",
@@ -33,5 +88,83 @@
         "key": "ctrl+shift+down",
         "when": "editorTextFocus",
         "command": "block-travel.selectDown",
+    },
+    {
+        "key": "ctrl+e",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "cursorEndSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "cursorHome",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "cursorHomeSelect",
+        "when": "textInputFocus"
+    },
+    // --- sub words
+    {
+        "key": "ctrl+right",
+        "command": "cursorWordPartRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+right",
+        "command": "cursorWordPartRightSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "cursorWordPartStartLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+left",
+        "command": "cursorWordPartStartLeftSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+backspace",
+        "command": "deleteWordPartLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+delete",
+        "command": "deleteWordPartRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    // === editing
+    {
+        "key": "ctrl+h",
+        "command": "editor.action.selectAll",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "editor.action.formatDocument",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // --- change case
+    {
+        "key": "ctrl+k u",
+        "command": "editor.action.transformToUppercase",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k l",
+        "command": "editor.action.transformToLowercase",
+        "when": "editorTextFocus && !editorReadonly"
     },
 ]
