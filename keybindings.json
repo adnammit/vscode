@@ -158,13 +158,18 @@
     },
     // --- change case
     {
-        "key": "ctrl+k u",
+        "key": "ctrl+u u",
         "command": "editor.action.transformToUppercase",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+k l",
+        "key": "ctrl+u l",
         "command": "editor.action.transformToLowercase",
         "when": "editorTextFocus && !editorReadonly"
     },
+    // === MACROS
+    {
+        "key": "ctrl+k",
+        "command": "macros.kill"
+    }
 ]
