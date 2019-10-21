@@ -4,9 +4,9 @@
     "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.wordWrap": "on",
+    "editor.codeLens": true,
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "files.eol": "\n",
-    "workbench.colorTheme": "Atom One Dark",
     "vetur.format.options.tabSize": 4,
     "vetur.format.options.useTabs": true,
     "vetur.format.defaultFormatterOptions": {
@@ -25,7 +25,7 @@
     "editor.quickSuggestions": {
         "other": true,
         "comments": false,
-        "strings": false
+        "strings": true
     },
     // Controls if suggestions should be accepted on 'Enter' - in addition to 'Tab'. Helps to avoid ambiguity between inserting new lines or accepting suggestions. The value 'smart' means only accept a suggestion with Enter when it makes a textual change
     "editor.acceptSuggestionOnEnter": "on",
@@ -34,7 +34,7 @@
     // Controls if suggestions should automatically show up when typing trigger characters
     "editor.suggestOnTriggerCharacters": true,
     // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
-    "editor.tabCompletion": "on",
+    "editor.tabCompletion": "off",
     // Controls whether sorting favours words that appear close to the cursor
     "editor.suggest.localityBonus": true,
     // Controls how suggestions are pre-selected when showing the suggest list
@@ -49,5 +49,17 @@
             "cursorEndSelect",
             "editor.action.clipboardCutAction",
         ]
-    }
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 0,
+    "gitlens.views.repositories.location": "scm",
+    "gitlens.views.fileHistory.location": "scm",
+    "gitlens.views.lineHistory.location": "scm",
+    "gitlens.views.compare.location": "scm",
+    "gitlens.views.search.location": "scm",
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[vue]": {},
+    "workbench.colorTheme": "Atom One Dark"
 }

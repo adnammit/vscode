@@ -7,11 +7,11 @@
         "command": "workbench.action.splitEditorOrthogonal"
     },
     {
-        "key": "alt+left",
+        "key": "ctrl+alt+left",
         "command": "workbench.action.focusLeftGroup"
     },
     {
-        "key": "alt+right",
+        "key": "ctrl+alt+right",
         "command": "workbench.action.focusRightGroup"
     },
     {
@@ -49,10 +49,15 @@
         "key": "alt+t",
         "command": "workbench.view.explorer"
     },
-    // --- terminal
+    // // --- terminal
+    // {
+    //     "key": "alt+shift+t",
+    //     "command": "workbench.action.terminal.toggleTerminal"
+    // },
+    // --- theme browser
     {
         "key": "alt+shift+t",
-        "command": "workbench.action.terminal.toggleTerminal"
+        "command": "workbench.action.selectTheme"
     },
     // === movement && selection
     {
@@ -140,6 +145,17 @@
         "command": "deleteWordPartRight",
         "when": "textInputFocus && !editorReadonly"
     },
+    // --- multicursor
+    {
+        "key": "alt+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "textInputFocus && !editorReadonly"
+    },
     // === editing
     {
         "key": "ctrl+h",
@@ -172,4 +188,6 @@
         "key": "ctrl+k",
         "command": "macros.kill"
     }
+
+
 ]
