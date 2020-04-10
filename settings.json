@@ -5,10 +5,15 @@
     "editor.fontLigatures": true,
     "editor.wordWrap": "on",
     "editor.codeLens": true,
+    "editor.detectIndentation": true,
+    "editor.insertSpaces": false,
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "files.eol": "\n",
-    "vetur.format.options.tabSize": 4,
+    // "vetur.format.options.tabSize": 4,
     "vetur.format.options.useTabs": true,
+    // "editor.insertSpaces": true,
+    // "editor.tabSize": 4,
+    // "editor.detectIndentation": false,
     "vetur.format.defaultFormatterOptions": {
         "prettier": {
             "singleQuote": true,
@@ -51,15 +56,22 @@
         ]
     },
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "gitlens.views.repositories.location": "scm",
     "gitlens.views.fileHistory.location": "scm",
     "gitlens.views.lineHistory.location": "scm",
     "gitlens.views.compare.location": "scm",
     "gitlens.views.search.location": "scm",
     "[json]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[vue]": {},
-    "workbench.colorTheme": "Atom One Dark"
+    "workbench.colorTheme": "Atom One Dark",
+    "window.newWindowDimensions": "maximized",
+    "files.associations": {
+        "*.gql": "graphql"
+    },
+    "dotnet-test-explorer.testProjectPath": "./tests/",
+    "vetur.format.defaultFormatter.js": "none",
+    "window.enableMenuBarMnemonics": false
 }
