@@ -1,6 +1,6 @@
 {
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.formatOnPaste": true,
+    "editor.formatOnPaste": false,
     "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.wordWrap": "on",
@@ -66,7 +66,13 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[vue]": {},
-    "workbench.colorTheme": "Atom One Dark",
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "on",
+        "editor.renderWhitespace": "all",
+        "editor.acceptSuggestionOnEnter": "off",
+        "editor.quickSuggestions": true
+    },
     "window.newWindowDimensions": "maximized",
     "files.associations": {
         "*.gql": "graphql"
@@ -76,5 +82,27 @@
     "window.enableMenuBarMnemonics": false,
     "omnisharp.monoPath": "",
     "gitlens.views.compare.files.layout": "list",
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "javascript.referencesCodeLens.enabled": true,
+    "typescript.implementationsCodeLens.enabled": true,
+    "javascript.referencesCodeLens.showOnAllFunctions": true,
+    "typescript.referencesCodeLens.enabled": true,
+    "mssql.connections": [
+        {
+            "server": "sqlsourcedev1.altsrc.net",
+            "database": "",
+            "authenticationType": "Integrated",
+            "profileName": "dev",
+            "password": ""
+        },
+        {
+            "server": "sqlsourcedev1.altsrc.net",
+            "database": "master",
+            "authenticationType": "Integrated",
+            "password": ""
+        }
+    ]
 }

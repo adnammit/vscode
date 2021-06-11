@@ -215,12 +215,12 @@
     },
     // --- change case
     {
-        "key": "ctrl+u u",
+        "key": "ctrl+l u",
         "command": "editor.action.transformToUppercase",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+u l",
+        "key": "ctrl+l l",
         "command": "editor.action.transformToLowercase",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -236,6 +236,36 @@
             // "text": "${env:USERNAME}",  // this works
             "text": "file = ${file};  workspaceFolder = ${workspaceFolder}"
         }
+    },
+    {
+        "key": "f5",
+        "command": "mssql.runQuery",
+        "when": "editorTextFocus && editorLangId == 'sql'"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-mssql.runQuery",
+        "when": "editorTextFocus && editorLangId == 'sql'"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "editor.foldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "-editor.foldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "editor.unfoldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+k ctrl+j",
+        "command": "-editor.unfoldAll",
+        "when": "editorTextFocus && foldingEnabled"
     },
 
 
